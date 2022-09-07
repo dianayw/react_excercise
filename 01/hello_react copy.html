@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello_react</title>
+    <script type="text/javascript" src="../js_new/react.development.js"></script>
+    <script type="text/javascript" src="../js_new/react-dom.development.js"></script>
+    <script type="text/javascript" src="../js_new/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="test"></div>
+    <script type="text/babel">
+        let VDOM = <h1>Hello,React</h1>;
+        const root = ReactDOM.createRoot(document.getElementById("test"));
+        root.render(VDOM);
+
+        // ReactDOM.render(VDOM,document.getElementById('test'))
+        // const myElement = <h1>I Love JSX!</h1>;
+
+        // const root = ReactDOM.createRoot(document.getElementById('root'));
+        // root.render(myElement);
+    </script>
+</body>
+
+</html>
