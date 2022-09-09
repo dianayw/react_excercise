@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auokka</title>
+    <script type="text/javascript" src="../js_new/react.development.js"></script>
+    <script type="text/javascript" src="../js_new/react-dom.development.js"></script>
+    <script type="text/javascript" src="../js_new/babel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const Header = () => {
+            return (
+                <>
+                <nav>
+                    <div className="nav-left">
+                        <div className="logo">
+                            <img src="img/logo.jpg" alt="auokka logo" />
+                        </div>
+                        <div className="nav-tab">
+                            <a href="index.html" className="open-sans trn">Home</a>
+                        </div>
+                        <div className="nav-tab">
+                            <a href="aboutus.html" className="open-sans trn">About Us</a>
+                        </div>
+                        <div className="nav-tab nav-products">
+                            <a href="products.html" className="open-sans trn">Products</a>
+                        </div >
+                        <div className="nav-tab">
+                            <a href="tourism.html" className="open-sans trn">Contact Us</a>
+                        </div>
+                    </div>
+                    <div className="nav-right">
+                        <a className="book-demo" href="">
+                            BOOK A DEMO    
+                        </a>{/*todo: link to the book demo page*/}
+                        <div className="current-user">
+                            <img src="./img/profile-icon.png" alt="default profile icon"/>
+                                <a href="">
+                                    Log in/Sign up
+                                </a>{/*todo: link to the sign-in sign-up page*/}
+                        </div>
+                    </div>
+                </nav>
+                <div className="banner">
+                    <div className="banner-frame">
+                        <img src="img/auokka_banner.png" alt="banner green and blue frame" />
+                    </div>
+                    <div className="banner-image">
+                        <img src="img/banner_image.jpg" alt="banner photo" />
+                    </div>
+                    <div className="banner-text">
+                        <p className="banner-t1">
+                            Auokka
+                        </p>
+                        <p className="banner-t2">
+                            Help towards a career success
+                        </p>
+                        <p><a href="">{/*todo link to course*/}
+                            FIND OUT COURSE
+                        </a></p>
+                    </div>
+                    <div className="banner-bar">
+
+                    </div>
+                </div>
+                </>
+            );
+        }
+
+        // class Person extends React.Component{
+
+        //     state = {name:'tom',sex:'M',age:18}           
+        //     render(){
+        //         const{name,age,sex} = this.state
+        //         return(
+        //             <ul>
+        //                 <li>Name:{name}</li>
+        //                 <li>Gender:{sex}</li>
+        //                 <li>Age:{age}</li>
+        //             </ul>
+        //         )
+        //     }
+        // }
+        //ReactDOM.render(VDOM,document.getElementById('everything'))
+        // ReactDOM.render(<Person/>,document.getElementById('test'))
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Header />);
+    </script>
+</body>
+
+</html>
